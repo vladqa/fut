@@ -71,7 +71,7 @@ def itemParse(item_data, full=True):
         'startingBid':       item_data.get('startingBid'),
         'id':                item_data['itemData']['id'],
         'timestamp':         item_data['itemData']['timestamp'],  # auction start
-        'rating':            item_data['itemData']['rating'],
+        'rating':            item_data['itemData'].get('rating'),
         'assetId':           item_data['itemData']['assetId'],
         'resourceId':        item_data['itemData']['resourceId'],
         'itemState':         item_data['itemData']['itemState'],
